@@ -1,11 +1,10 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local ProfileStore = require(ReplicatedStorage.AW_Fishing.ExternalLibs.ProfileStore)
+local ProfileStore = require(ReplicatedStorage.AmethystRealms.ExternalLibs.ProfileStore)
 
 -- Define the profile template
 local PROFILE_TEMPLATE = {
-	FishInventory = {},
-	playerRodEquipped = "Basic Rod", -- Add playerRodEquipped to the template
+	Cash = 100;
 }
 
 local PlayerStore = ProfileStore.New("PlayerStore3", PROFILE_TEMPLATE)
